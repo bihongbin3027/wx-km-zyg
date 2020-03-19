@@ -1,0 +1,73 @@
+.li {
+  display: flex;
+  position: relative;
+  padding: 12px;
+  background-color: #fff;
+  composes: borderBottom from '../../style/color.module.css';
+}
+
+.img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 110px;
+  width: 110px;
+  height: 90px;
+  margin-right: 15px;
+  border-radius: 5px;
+  background-color: #ddd;
+  overflow: hidden;
+}
+
+.title {
+  font-size: 16px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.price {
+  font-size: 16px;
+  margin-top: 8px;
+  composes: textColor6 from '../../style/color.module.css';
+}
+
+.dec {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  line-height: 1.3;
+  -webkit-line-clamp: 2;
+  /*! autoprefixer: off */
+  -webkit-box-orient: vertical;
+  margin-top: 6px;
+  composes: textColor4 from '../../style/color.module.css';
+}
+
+.phycart {
+  padding: 12px;
+  background-color: #fff;
+}
+
+.phycartimg {
+  background-color: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.phycartimg img {
+  width: 100%;
+  max-height: 170px;
+  vertical-align: top;
+}
+
+.phycartprice {
+  display: flex;
+  font-size: 16px;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.phycartpricetext {
+  composes: textColor6 from '../../style/color.module.css';
+}

@@ -1,0 +1,41 @@
+/* 按钮 */
+.btn {
+  display: flex;
+  height: 46px;
+  color: #999;
+  font-size: 16px;
+  text-align: center;
+  border: 0 none;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.btn:active {
+  opacity: 0.8;
+}
+
+.btn_inline {
+  display: inline-block;
+}
+
+.button_primary {
+  color: #333;
+  composes: bgColor1 from './color.module.css';
+}
+
+.btn-style1 {
+  display: inline-block;
+  line-height: 1;
+  padding: 4px 16px;
+  border: 1px solid #979797;
+  border-radius: 20px;
+}
+
+.btn-style1-primary {
+  composes: borderColor1 from './color.module.css';
+  composes: bgColor1 from './color.module.css';
+}

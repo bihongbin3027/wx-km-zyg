@@ -1,0 +1,164 @@
+.doctor_info {
+  padding: 10px;
+  background-color: #fff;
+  margin-top: 10px;
+  position: relative;
+  composes: borderBottom from '../../style/color.module.css';
+}
+
+.doctor_box {
+  composes: doctor_box from '../doctordetails/doctordetails.module.css';
+}
+
+.doctor_img {
+  composes: doctor_img from '../doctordetails/doctordetails.module.css';
+  margin-right: 15px;
+}
+
+.doctor_name {
+  composes: doctor_name from '../doctordetails/doctordetails.module.css';
+  color: #000;
+}
+
+.doctor_name span {
+  font-size: 14px;
+  color: #666;
+}
+
+.doctor_department {
+  composes: doctor_department from '../doctordetails/doctordetails.module.css';
+  color: #000;
+}
+
+.color1 {
+  composes: textColor4 from '../../style/color.module.css';
+}
+
+.color2 {
+  composes: textColor6 from '../../style/color.module.css';
+}
+
+.color3 {
+  font-style: normal;
+  color: #fbbc5e;
+}
+
+.color4 {
+  composes: textColor7 from '../../style/color.module.css';
+}
+
+.foot_btn {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  composes: btn from '../../style/btn.module.css';
+  composes: button_primary from '../../style/btn.module.css';
+}
+
+.box {
+  padding: 10px 10px 0;
+  margin-top: 10px;
+  background-color: #fff;
+}
+
+.box .doctor_img {
+  margin-right: 15px;
+}
+
+.reserve_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  margin-bottom: 12px;
+  margin-left: -10px;
+  margin-right: -10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  composes: borderBottom from '../../style/color.module.css';
+}
+
+.reserve_user {
+  display: flex;
+  align-items: center;
+}
+
+.reserve_ul {
+  padding-bottom: 12px;
+}
+
+.reserve_ul li {
+  display: flex;
+  margin-top: 8px;
+  color: #666;
+}
+
+.reserve_ul li span {
+  display: flex;
+  flex: 0 0 60px;
+  margin-right: 10px;
+}
+
+.reserve_foot {
+  display: flex;
+  height: 46px;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: -10px;
+  margin-right: -10px;
+  composes: borderTop from '../../style/color.module.css';
+}
+
+.reserve_foot_left {
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #fbbc5e;
+}
+
+.btn_margin > div {
+  margin-left: 10px;
+}
+
+.foot_btn_style {
+  composes: btn-style1 from '../../style/btn.module.css';
+  padding: 8px 20px;
+}
+
+.foot_btn_style1 {
+  composes: foot_btn_style;
+  composes: btn-style1-primary from '../../style/btn.module.css';
+  padding: 8px 20px;
+}
+
+.reserve_foot_fixed {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #fff;
+  composes: reserve_foot;
+  margin-right: 0;
+  margin-left: 0;
+  height: 46px;
+}
+
+.foot_btn_style_max {
+  composes: foot_btn_style;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.foot_btn_style1_max {
+  composes: foot_btn_style1;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}

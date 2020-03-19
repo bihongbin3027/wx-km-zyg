@@ -1,0 +1,155 @@
+.orderul {
+  padding: 10px;
+}
+
+.orderli {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkbox {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.orderbox {
+  flex: 1;
+  padding: 12px 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+
+.numbering {
+  display: flex;
+  padding-bottom: 11px;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  composes: borderBottom from '../../style/color.module.css';
+}
+
+.orange {
+  composes: textColor6 from '../../style/color.module.css';
+}
+
+.userinfo {
+  position: relative;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  composes: borderBottom from '../../style/color.module.css';
+}
+
+.arrowIcon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  margin-top: -5px;
+  border-width: 1px;
+  border-color: #999999;
+  border-style: solid solid none none;
+  transform: rotate(45deg);
+}
+
+.userflex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.arrowBtn {
+  display: flex;
+  width: 76px;
+  height: 26px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: #f7d550;
+}
+
+.doctortxt {
+  margin-top: 8px;
+}
+
+.pay {
+  display: flex;
+  width: 60px;
+  height: 26px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: #f7d550;
+}
+
+.timeprice {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.date {
+  display: flex;
+  align-items: center;
+}
+
+.orderdbox {
+  position: relative;
+  padding-bottom: 46px;
+}
+
+.orderdul {
+  padding: 5px 10px;
+  background-color: #fff;
+}
+
+.orderdul li {
+  display: flex;
+  height: 28px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footbtn {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  composes: btn button_primary from '../../style/btn.module.css';
+  z-index: 1;
+}
+
+.reportTop {
+  padding: 10px;
+  background-color: #fff;
+  margin-top: 10px;
+}
+
+.reportTop dt {
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.reportInfo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.reportInfo:last-child {
+  margin-bottom: 0;
+}
+
+.red {
+  color: #f00;
+}
+
+.blue {
+  color: #3f51b5;
+}

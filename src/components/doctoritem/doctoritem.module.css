@@ -1,0 +1,90 @@
+.doctor_item {
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid #f0f0f2;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.doctor_img {
+  flex: 0 0 60px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+  margin-right: 15px;
+  overflow: hidden;
+}
+
+.doctor_img img {
+  display: block;
+  border: 0 none;
+  background-color: #ddd;
+}
+
+.doctor_dec {
+  overflow: hidden;
+}
+
+.doctor_name {
+  font-size: 16px;
+}
+
+.doctor_name span {
+  font-size: 14px;
+  margin-left: 10px;
+  color: #666;
+}
+
+.doctor_department {
+  margin-top: 5px;
+  color: #000;
+}
+
+.doctor_department em {
+  margin-left: 5px;
+  font-style: normal;
+}
+
+.doctor_goodat {
+  display: flex;
+  margin-top: 5px;
+  color: #999;
+}
+
+.doctor_goodat b {
+  font-weight: normal;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.doctor_goodat_txt {
+  flex: 0 0 44px;
+}
+
+.doctor_mark {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  display: flex;
+  width: 60px;
+  height: 24px;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 4px;
+  border-radius: 20px;
+}
+
+.doctor_mark1 {
+  position: absolute;
+  right: 15px;
+  top: 6px;
+  display: flex;
+  height: 24px;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 4px;
+  border-radius: 20px;
+  composes: textColor6 from '../../style/color.module.css';
+}

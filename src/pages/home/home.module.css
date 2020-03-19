@@ -1,0 +1,154 @@
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 6px 12px;
+  font-size: 16px;
+  z-index: 10;
+  composes: bgColor1 from '../../style/color.module.css';
+}
+
+.wrapper {
+  margin-top: 44px;
+}
+
+.header_city {
+  margin-left: 8px;
+}
+
+.input {
+  flex: 1;
+  margin-left: 10px;
+  margin-right: 10px;
+  position: relative;
+}
+
+.input i {
+  position: absolute;
+  left: 8px;
+  top: 8px;
+}
+
+.input input {
+  width: 100%;
+  height: 32px;
+  border: 0 none;
+  padding: 0 30px;
+  font-size: 14px;
+  border-radius: 15px;
+}
+
+.header_name {
+  width: 66px;
+  flex: 0 0 66px;
+  text-align: right;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3px 5px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.menu li {
+  width: 25%;
+  flex: 0 0 25%;
+  text-align: center;
+  margin-top: 11px;
+  margin-bottom: 11px;
+}
+
+.menu_icon {
+  height: 36px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 8px;
+}
+
+.main_menu {
+  height: 54px;
+}
+
+.menu_icon img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.recording {
+  display: flex;
+  background-color: #fff;
+  margin-top: 10px;
+  padding: 5px 0;
+  position: relative;
+  overflow-y: auto;
+}
+
+.recording_li {
+  display: flex;
+  flex: 0 0 50%;
+  padding: 10px 0;
+  align-items: center;
+  position: relative;
+  border-right: 1px solid #efefef;
+}
+
+.recording_li:last-child {
+  border-right: 0 none;
+}
+
+.recording_img {
+  width: 47px;
+  height: 47px;
+  margin-left: 13px;
+  margin-right: 13px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.recording_img img {
+  display: block;
+  background-color: #ddd;
+}
+
+.recording_user {
+  color: #000;
+}
+
+.recording_user em {
+  display: inline-block;
+  width: 43px;
+  white-space: nowrap;
+  vertical-align: top;
+  overflow: hidden;
+  font-style: normal;
+}
+
+.recording_user span {
+  display: inline-block;
+  width: 52px;
+  color: #666;
+  font-size: 13px;
+  margin-left: 5px;
+  vertical-align: top;
+  margin-top: 1px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+ 
+.recording_btn {
+  display: flex;
+  width: 100px;
+  height: 24px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 24px;
+  color: #000;
+  margin-top: 5px;
+  composes: bgColor1 from '../../style/color.module.css';
+}

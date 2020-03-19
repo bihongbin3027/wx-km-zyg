@@ -1,0 +1,32 @@
+.date {
+  display: flex;
+  padding: 5px 0;
+  background-color: #fff;
+}
+
+.date_left {
+  flex: 0 0 62px;
+  text-align: center;
+  border-right: 1px solid #ccc;
+}
+
+.date_ul {
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+  overflow-y: auto;
+}
+
+.date_ul li {
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+}
+
+.doctor_wrap {
+  margin-top: 10px;
+}
+
+.active {
+  composes: textColor3 from '../../style/color.module.css'
+}

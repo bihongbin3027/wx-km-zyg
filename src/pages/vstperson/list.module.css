@@ -1,0 +1,65 @@
+.listbox {
+  padding-top: 6px;
+  padding-bottom: 58px;
+}
+
+.user {
+  font-size: 16px;
+}
+
+.user span {
+  margin-right: 10px;
+}
+
+.phone {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  composes: textColor1 from '../../style/color.module.css';
+}
+
+.listli {
+  background-color: #fff;
+  padding-top: 8px;
+  padding-left: 10px;
+  margin-top: 6px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+.listli:last-child {
+  margin-bottom: 0;
+}
+
+.listli_foot {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 10px;
+  border-top: 1px solid #f0f0f2;
+}
+
+.listli_foot_right {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.listli_foot_right > div {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.listli_foot_right i {
+  margin-right: 5px;
+}
+
+.foot_btn {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  composes: btn from '../../style/btn.module.css';
+  composes: button_primary from '../../style/btn.module.css';
+}

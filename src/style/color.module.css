@@ -1,0 +1,88 @@
+.textColor1 {
+  color: #999;
+}
+
+.textColor2 {
+  color: #e51c23;
+}
+
+.textColor3 {
+  color: #f7d550;
+}
+
+.textColor4 {
+  color: #666;
+}
+
+.textColor5 {
+  color: #ff3a00;
+}
+
+.textColor6 {
+  color: #f5a623;
+}
+
+.textColor7 {
+  color: #0e73e8;
+}
+
+.borderColor1 {
+  border-color: #f7d550 !important;
+}
+
+.bgColor1 {
+  background-color: #f7d550 !important;
+}
+
+.borderBottom:after {
+  content: '';
+  position: absolute;
+  background-color: #ddd;
+  display: block;
+  z-index: 1;
+  top: auto;
+  right: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1PX;
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+}
+
+.borderTop:after {
+  content: '';
+  position: absolute;
+  background-color: #ddd;
+  display: block;
+  z-index: 1;
+  top: 0;
+  right: auto;
+  bottom: auto;
+  left: 0;
+  width: 100%;
+  height: 1PX;
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+}
+
+.borderRight:after {
+  content: '';
+  position: absolute;
+  background-color: #ddd;
+  display: block;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  -webkit-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+  -webkit-transform: scaleX(0.5);
+  transform: scaleX(0.5);
+}

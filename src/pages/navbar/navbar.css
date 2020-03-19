@@ -1,0 +1,27 @@
+.tabbar {
+  position: fixed;
+  left: 10px;
+  bottom: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #5d4f4e;
+  opacity: 0.8;
+  font-size: 0;
+  padding-left: 14px;
+  padding-right: 14px;
+  border-radius: 16px;
+  transition: opacity 0.3s;
+  z-index: 100;
+}
+
+.tabbar.react-draggable-dragging {
+  opacity: 1;
+}
+
+.tabbar .tabber-item {
+  display: flex;
+  padding: 6px 8px;
+  align-items: center;
+  justify-content: center;
+}

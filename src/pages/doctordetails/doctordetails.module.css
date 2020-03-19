@@ -1,0 +1,162 @@
+.doctor_info {
+  display: flex;
+  height: 138px;
+  align-items: center;
+  padding-left: 26px;
+  padding-right: 26px;
+  position: relative;
+  background: url('../../images/doctor_bg.png') no-repeat 0 0;
+  background-size: cover;
+}
+
+.doctor_attention {
+  position: absolute;
+  right: 26px;
+  top: 50%;
+  display: flex;
+  width: 54px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 15px;
+  margin-top: -15px;
+  font-size: 12px;
+  composes: textColor6 from '../../style/color.module.css';
+}
+
+.doctor_attention em {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  margin-right: 3px;
+}
+
+.doctor_attention em:before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 2px;
+  top: 50%;
+  margin-top: -1px;
+  background-color: #f5a623;
+}
+
+.doctor_attention em:after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 8px;
+  left: 50%;
+  margin-left: -1px;
+  background-color: #f5a623;
+}
+
+.doctor_box {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.doctor_img {
+  width: 58px;
+  height: 58px;
+  border-radius: 58px;
+  margin-right: 20px;
+  overflow: hidden;
+}
+
+.doctor_img img {
+  display: block;
+  border: 0 none;
+  background-color: #ddd;
+}
+
+.doctor_name {
+  font-size: 16px;
+}
+
+.doctor_title {
+  font-size: 14px;
+}
+
+.doctor_name span,
+.doctor_department span {
+  margin-left: 10px;
+}
+
+.doctor_department {
+  margin-top: 8px;
+}
+
+.doctor_goodat {
+  display: flex;
+  padding: 10px;
+  color: #000;
+  background-color: #fff;
+}
+
+.doctor_goodat b {
+  font-weight: normal;
+}
+
+.doctor_goodat span {
+  flex: 1;
+  margin-left: 10px;
+  color: #666;
+}
+
+.haoyuan {
+  display: flex;
+  height: 44px;
+  font-size: 14px;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  composes: borderBottom from '../../style/color.module.css';  
+}
+
+.haoyuan_num b {
+  display: inline-block;
+  width: 70px;
+  vertical-align: top;
+  font-weight: normal;
+  white-space: nowrap;
+}
+
+.haoyuan_num span {
+  display: inline-block;
+  width: 94px;
+  vertical-align: top;
+  margin-left: 20px;
+}
+
+.hao_price {
+  font-style: normal;
+  margin-left: 10px;
+  composes: textColor6 from '../../style/color.module.css';  
+}
+
+.haoyuan_btn {
+  padding: 5px 20px;
+  border-radius: 14px;
+}
+
+.introduction {
+  font-size: 14px;
+  line-height: 1.4;
+  padding: 10px;
+}
+
+.acc_box {
+  position: relative;
+}
+
+.refresh {
+  position: absolute;
+  right: 50px;
+  top: 4px;
+  padding: 10px;
+}

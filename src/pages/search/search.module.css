@@ -1,0 +1,87 @@
+.box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 8.5px 10px;
+  z-index: 2;
+  composes: bgColor1 from '../../style/color.module.css';
+}
+
+.main {
+  margin-top: 45px;
+}
+
+.box input {
+  width: 100%;
+  height: 28px;
+  border: 0 none;
+  padding: 0 40px 0 30px;
+  border-radius: 15px;
+  color: #666;
+}
+
+.box i {
+  position: absolute;
+  left: 20px;
+  top: 15px;
+}
+
+.box .input_delete {
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  text-align: center;
+  margin-top: -8px;
+}
+
+.search_list {
+  padding: 10px 10px 5px;
+  background-color: #fff;
+}
+
+.search_list_head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.search_list_ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.doctor_wrap {
+  margin-top: 10px;
+}
+
+.search_list_item {
+  padding: 6px 12px;
+  background-color: #f5f5f5;
+  border-radius: 3px;
+  text-align: center;
+  margin-right: 12px;
+  margin-bottom: 12px;
+}
+
+.search_result_none {
+  margin-top: 150px;
+  text-align: center;
+}
+
+.search_txt1 {
+  font-size: 16px;
+}
+
+.search_txt2 {
+  color: #666;
+  margin-top: 5px;
+}

@@ -1,0 +1,71 @@
+/* 单选框 */
+.checkboxWrapper {
+  position: relative;
+  display: inline-block;
+  line-height: 1;
+  margin-left: 0;
+}
+
+.checkboxInput {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  z-index: 1;
+  border: 0 none;
+  opacity: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.checkboxInput[disabled] ~ .checkboxInner {
+  background-color: #ccc;
+}
+
+.checkboxInner {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #ccc;
+  position: relative;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  -webkit-transform: scale(1) rotate(0deg);
+  -ms-transform: scale(1) rotate(0deg);
+  transform: scale(1) rotate(0deg);
+}
+.checkboxInput:checked ~ .checkboxInner {
+  border-color: #f7d500;
+  background: #f7d500;
+}
+
+.checkboxInput:checked ~ .checkboxInner:after {
+  content: " ";
+  position: absolute;
+  display: block;
+  top: 2px;
+  left: 6px;
+  z-index: 999;
+  width: 4px;
+  height: 8px;
+  border-style: solid;
+  border-width: 0 1px 1px 0;
+  border-color: #fff;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.leftCheck {
+  display: flex;
+  align-items: center;
+}
+
+.checkboxText {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 5px;
+}

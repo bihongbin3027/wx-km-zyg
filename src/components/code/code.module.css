@@ -1,0 +1,11 @@
+.btn {
+  width: 94px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  margin-right: -10px;
+  white-space: nowrap;
+  composes: bgColor1 from '../../style/color.module.css';
+}

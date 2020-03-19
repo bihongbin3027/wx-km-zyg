@@ -1,0 +1,48 @@
+.integralbg {
+  display: flex;
+  height: 158px;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #00a4ff;
+  text-align: center;
+}
+
+.integralorange {
+  composes: integralbg;
+  background-color: #ff9800;
+}
+
+.intergranum {
+  font-size: 34px;
+  margin-bottom: 5px;
+}
+
+.recharge {
+  display: flex;
+  width: 90px;
+  height: 36px;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  color: #fff;
+  margin: 10px auto 0;
+}
+
+.logname {
+  font-size: 15px;
+}
+
+.logtime {
+  margin-top: 3px;
+  composes: textColor1 from '../../style/color.module.css';
+}
+
+.blue {
+  composes: textColor7 from '../../style/color.module.css';
+}
+
+.orange {
+  composes: textColor6 from '../../style/color.module.css';
+}

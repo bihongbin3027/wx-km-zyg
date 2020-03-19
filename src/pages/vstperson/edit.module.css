@@ -1,0 +1,82 @@
+.listItem_li {
+  width: 100%;
+  display: flex;
+  height: 46px;
+  background-color: #fff;
+  padding: 0 10px;
+  align-items: center;
+  border-bottom: 1px solid #f0f0f2;
+  position: relative;
+}
+
+.listItem_li.isrequired:before {
+  content: '*';
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  color: #f00;
+  font-size: 12px;
+}
+
+.leftText {
+  flex: 0 0 76px;
+  font-size: 15px;
+}
+
+.listItem_li input {
+  flex: 1;
+  height: 100%;
+  border: 0 none;
+  color: #999;
+  padding-right: 20px;
+  font-size: 15px;
+}
+
+.code_box {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  align-items: center;
+}
+
+.sex > label {
+  margin-right: 30px;
+}
+
+.set_normal {
+  composes: listItem_li;
+  margin-top: 12px;
+  justify-content: space-between;
+}
+
+.set_normal .leftText {
+  flex: 1;
+}
+
+.delete_btn {
+  margin-top: 12px;
+  composes: listItem_li;
+  composes: textColor2 from '../../style/color.module.css';
+  justify-content: center;
+}
+
+.foot_btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  composes: btn from '../../style/btn.module.css';
+  composes: button_primary from '../../style/btn.module.css';
+}
+
+.foot_btn_normal {
+  composes: foot_btn;
+  position: static;
+  margin-top: 10px;
+}
+
+.editbox {
+  display: block;
+  margin-top: 10px;
+}

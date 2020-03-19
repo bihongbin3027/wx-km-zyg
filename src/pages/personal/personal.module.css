@@ -1,0 +1,105 @@
+.user {
+  display: flex;
+  height: 162px;
+  align-items: center;
+  justify-content: center;
+  background: url('../../images/personal_bg.png') no-repeat 0 0;
+  background-size: cover;
+}
+
+.doc_img {
+  width: 72px;
+  height: 72px;
+  background-color: #fff;
+  position: relative;
+  border-radius: 72px;
+}
+
+.doc_img img {
+  border-radius: 72px;
+}
+
+.doc_img i {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.doc_name {
+  font-size: 17px;
+  color: #fff;
+  text-align: center;
+  margin-top: 6px;
+}
+
+.remaining {
+  display: flex;
+  height: 60px;
+  background-color: #fff;
+  position: relative;
+}
+
+.remaining:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 5px;
+  bottom: 5px;
+  width: 1px;
+  background-color: #ddd;
+  transform-origin: 50% 100%;
+  transform: scaleX(0.5);
+  z-index: 1;
+}
+
+.remaining > div {
+  display: flex;
+  flex: 0 0 50%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.balance {
+  composes: textColor6 from '../../style/color.module.css';
+}
+
+.balance,
+.integral {
+  font-size: 17px;
+  margin-bottom: 3px;
+}
+
+.balance span,
+.integral span {
+  margin-right: 3px;
+}
+
+.rig_txt {
+  font-size: 13px;
+}
+
+.integral {
+  composes: textColor7 from '../../style/color.module.css';
+}
+
+.icon_style1 img {
+  width: 20px;
+  height: 16px;
+}
+
+.icon_style2 img {
+  width: 20px;
+  height: 20px;
+}
+
+.icon_style3 img {
+  width: 18px;
+  height: 22.5px;
+}
+
+.icon_style4 img {
+  width: 22.5px;
+  height: 21.5px;
+  margin-left: -2.5px;
+}
